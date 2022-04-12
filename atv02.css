@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+.grid{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "escola trabalho casa"
+        "feira trabalho casa"
+        "computador computador computador";
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 10fr 4fr 3fr;
+    grid-gap: 0px 0px;
+}
+.escola{
+    grid-area: escola;
+    border: solid 8px black;
+    background-color: blue;
+}
+
+.trabalho{
+    grid-area: trabalho;
+    border: solid 8px black;
+    background-color: green;
+}
+
+.casa{
+    grid-area: casa;
+    border: solid 8px black;
+    background-color: yellow;
+}
+
+.feira{
+    grid-area: feira;
+    border: solid 8px black;
+    background-color: red;
+}
+
+.computador{
+    grid-area: computador;
+    border: solid 8px black;
+    background-color: brown;
+}
